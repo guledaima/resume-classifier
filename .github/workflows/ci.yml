@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
+      
 
 jobs:
   build:
+    name: deploying
     runs-on: ubuntu-latest
     steps:
      - name: Setup Node
@@ -14,10 +16,6 @@ jobs:
        with:
          node-version: '20.x'
 
-     - name: Set up Python
-       uses: actions/setup-python@v4
-       with:
-          python-version: '3.12.4'
 
      - name: Install dependencies
        run: |
