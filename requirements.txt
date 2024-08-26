@@ -1,0 +1,7 @@
+sentence-transformers
+transformers
+gradio
+numpy
+pdfplumber
+torch
+langsmith
