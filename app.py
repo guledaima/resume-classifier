@@ -136,7 +136,7 @@ def predict_hiring(resume_file, job_description):
                            f"sbert decision: {sbert_decision}\n"
                            f"xlnet decision: {xlnet_decision}")
     
-    return "\n".join(results) , decisions
+    return "\n".join(results) , "\n".join(decisions)
 
 with gr.Blocks() as interface:
     inputs=[gr.Files(label="Resume file"),gr.Text(label="job description")]
